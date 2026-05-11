@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include <string.h>
 
 struct Student{
@@ -78,5 +79,39 @@ void outputData(){
 int main(){
     readInputs();
     outputData();
+=======
+
+enum OrderStatus{
+    PENDING,
+    PAID,
+    SHIPPED,
+    DELIVERED,
+    CANCELLED
+};
+
+int main(){
+    enum OrderStatus status;
+    status = SHIPPED;
+
+    switch(status){
+      case PENDING:
+      printf("PENDING\n");
+      break;
+      case PAID:
+      printf("PAID\n");
+      break;
+      case SHIPPED:
+      printf("SHIPPED\n");
+      break;
+      case DELIVERED:
+      printf("DELIVERED\n");
+      break;
+      case CANCELLED:
+      printf("CANCELLED\n");
+      break;
+    }
+    
+
+>>>>>>> 95018b5 (Commit on enumerations)
     return 0;
 }
